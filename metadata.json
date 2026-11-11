@@ -1,0 +1,6 @@
+{
+  "name": "Kit IA para Negocios",
+  "description": "Organiza 30 días de contenido para tu negocio con ayuda de la inteligencia artificial. Ideas, guiones, prompts y 5 bonos incluidos por US$ 9.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+Coloca aquí las imágenes oficiales del producto en formato .webp, .avif o .png:
+
+- kit-ia-portada-principal.webp   (Portada oficial del Kit IA para Negocios)
+- bono-1-plantillas.webp          (Portada Bono 1: 20 Plantillas de Publicaciones)
+- bono-2-calendario.webp          (Portada Bono 2: Calendario de Fechas Comerciales)
+- bono-3-checklist.webp           (Portada Bono 3: Checklist de Perfil Profesional)
+- bono-4-frases.webp              (Portada Bono 4: 50 Frases para Captar Atención)
+- bono-5-control.webp             (Portada Bono 5: Control de Resultados)
+- demo-restaurantes.webp          (Opcional: imagen demostrativa para pestaña Restaurantes)
+- demo-belleza.webp               (Opcional: imagen demostrativa para pestaña Salones de Belleza)
+- demo-tiendas.webp               (Opcional: imagen demostrativa para pestaña Tiendas)
+- demo-servicios.webp             (Opcional: imagen demostrativa para pestaña Servicios Profesionales)
+- demo-emprendedores.webp         (Opcional: imagen demostrativa para pestaña Emprendedores)
+- og-kit-ia-para-negocios.webp    (Imagen Open Graph 1200x630 para compartir en redes)
