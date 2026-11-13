@@ -29,12 +29,14 @@ export const BonusGallery: React.FC = () => {
                   <span className="text-[#22C55E]">INCLUIDO GRATIS</span>
                 </div>
 
-                <div className="mx-auto w-full max-w-[260px] sm:max-w-none">
+                <div className="mx-auto w-full max-w-[340px] sm:max-w-none rounded-xl border border-[#F5C542]/20 bg-[#071226]/70 p-1">
                   <ProductCover
                     image={coverImage}
                     title={bonus.title}
                     subtitle={bonus.number}
-                    aspectClass="aspect-[4/5]"
+                    aspectClass="aspect-square"
+                    imageClassName="p-0"
+                    className="border-0 rounded-lg"
                   />
                 </div>
 

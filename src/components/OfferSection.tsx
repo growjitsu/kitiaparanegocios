@@ -22,22 +22,25 @@ const INCLUDED_LIST = [
 export const OfferSection: React.FC = () => {
   return (
     <section id="oferta" className="border-b border-white/10 bg-[#071226] py-14 sm:py-20">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <div className="rounded-3xl border-2 border-[#F5C542] bg-[#102849] p-6 sm:p-10 shadow-2xl">
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="rounded-3xl border-2 border-[#F5C542] bg-[#102849] p-5 sm:p-8 lg:p-10 shadow-2xl">
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-12 md:gap-8">
             {/* Portada oficial */}
-            <div className="md:col-span-5 min-w-0">
-              <div className="mx-auto max-w-[260px] md:max-w-none">
+            <div className="md:col-span-6 min-w-0">
+              <div className="mx-auto w-full max-w-[480px] md:max-w-none rounded-2xl border border-[#F5C542]/25 bg-[#071226]/70 p-1.5 shadow-xl">
                 <ProductCover
                   image={SITE_IMAGES.mainCover}
                   title={PRODUCT_NAME}
                   subtitle={PRODUCT_SUBTITLE}
+                  aspectClass="aspect-[3/2]"
+                  imageClassName="p-0"
+                  className="border-0 rounded-xl"
                 />
               </div>
             </div>
 
             {/* Detalles de la oferta */}
-            <div className="md:col-span-7 min-w-0">
+            <div className="md:col-span-6 min-w-0">
               <p className="text-xs sm:text-sm font-bold tracking-wider text-[#F5C542] uppercase">
                 Kit principal + 5 bonos exclusivos
               </p>

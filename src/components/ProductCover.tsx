@@ -9,6 +9,7 @@ interface ProductCoverProps {
   priority?: boolean;
   aspectClass?: string;
   className?: string;
+  imageClassName?: string;
 }
 
 export const ProductCover: React.FC<ProductCoverProps> = ({
@@ -18,6 +19,7 @@ export const ProductCover: React.FC<ProductCoverProps> = ({
   priority = false,
   aspectClass = "aspect-[4/5]",
   className = "",
+  imageClassName = "p-2 sm:p-3",
 }) => {
   const [hasError, setHasError] = useState(false);
 
@@ -36,7 +38,7 @@ export const ProductCover: React.FC<ProductCoverProps> = ({
           decoding={priority ? "sync" : "async"}
           referrerPolicy="no-referrer"
           onError={() => setHasError(true)}
-          className="h-full w-full object-contain p-2 sm:p-3"
+          className={`h-full w-full object-contain ${imageClassName}`}
         />
       ) : (
         <div className="flex h-full w-full flex-col items-center justify-center p-5 text-center bg-gradient-to-b from-[#102849] to-[#071226]">

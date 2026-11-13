@@ -29,14 +29,14 @@ export const Hero: React.FC = () => {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Columna de texto: prioridad visual en móvil */}
-          <div className="min-w-0 lg:col-span-7">
+          <div className="min-w-0 lg:col-span-6">
             <p className="text-xs sm:text-sm font-bold tracking-[0.12em] text-[#F5C542] uppercase">
               CONTENIDO INTELIGENTE PARA EMPRENDEDORES
             </p>
 
-            <h1 className="mt-3 text-[clamp(2rem,5.2vw,3.35rem)] font-extrabold leading-[1.12] text-white">
+            <h1 className="mt-3 text-[clamp(2rem,4.6vw,3.15rem)] font-extrabold leading-[1.12] text-white">
               ¿No sabes qué publicar en las redes de tu negocio?
             </h1>
 
@@ -65,11 +65,14 @@ export const Hero: React.FC = () => {
 
             {/* Portada en móvil (visible entre beneficios y precio para flujo natural) */}
             <div className="mt-7 lg:hidden">
-              <div className="mx-auto max-w-[280px] sm:max-w-[320px]">
+              <div className="mx-auto w-full max-w-[480px] rounded-2xl border border-[#F5C542]/25 bg-[#0B1D38]/80 p-1.5 shadow-xl">
                 <ProductCover
                   image={SITE_IMAGES.mainCover}
                   title={PRODUCT_NAME}
                   subtitle={PRODUCT_SUBTITLE}
+                  aspectClass="aspect-[3/2]"
+                  imageClassName="p-0"
+                  className="border-0 rounded-xl"
                   priority
                 />
               </div>
@@ -102,12 +105,15 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Columna de portada en escritorio */}
-          <div className="hidden lg:block lg:col-span-5 min-w-0">
-            <div className="mx-auto max-w-[400px] rounded-3xl border border-[#F5C542]/20 bg-[#0B1D38]/80 p-4 shadow-2xl">
+          <div className="hidden lg:block lg:col-span-6 min-w-0">
+            <div className="w-full rounded-3xl border border-[#F5C542]/25 bg-[#0B1D38]/80 p-2.5 shadow-2xl">
               <ProductCover
                 image={SITE_IMAGES.mainCover}
                 title={PRODUCT_NAME}
                 subtitle={PRODUCT_SUBTITLE}
+                aspectClass="aspect-[3/2]"
+                imageClassName="p-0"
+                className="border-0 rounded-2xl"
                 priority
               />
             </div>

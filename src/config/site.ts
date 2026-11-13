@@ -27,35 +27,35 @@ export interface ImageSlotConfig {
 
 export const SITE_IMAGES = {
   mainCover: {
-    src: "/images/kit-ia-portada-principal.webp",
+    src: "/assets/aistudio/Kit_IA_para_Neg_cios__Conte_do_Inteligente_da0583dc.png",
     alt: "Portada oficial de Kit IA para Negocios - 30 Días de Contenido Inteligente",
-    slotLabel: "Portada principal del Kit (kit-ia-portada-principal.webp)",
+    slotLabel: "Portada principal del Kit (Kit_IA_para_Neg_cios__Conte_do_Inteligente_da0583dc.png)",
   } satisfies ImageSlotConfig,
   bonuses: [
     {
-      src: "/images/bono-1-plantillas.webp",
+      src: "/assets/aistudio/bonus_1_e2145093.png",
       alt: "Portada del Bono 1: 20 Plantillas de Publicaciones",
-      slotLabel: "Portada Bono 1 (bono-1-plantillas.webp)",
+      slotLabel: "Portada Bono 1 (bonus_1_e2145093.png)",
     },
     {
-      src: "/images/bono-2-calendario.webp",
+      src: "/assets/aistudio/bonus_2_66c1fc5a.png",
       alt: "Portada del Bono 2: Calendario de Fechas Comerciales",
-      slotLabel: "Portada Bono 2 (bono-2-calendario.webp)",
+      slotLabel: "Portada Bono 2 (bonus_2_66c1fc5a.png)",
     },
     {
-      src: "/images/bono-3-checklist.webp",
+      src: "/assets/aistudio/bonus_3_e6239c56.png",
       alt: "Portada del Bono 3: Checklist de Perfil Profesional",
-      slotLabel: "Portada Bono 3 (bono-3-checklist.webp)",
+      slotLabel: "Portada Bono 3 (bonus_3_e6239c56.png)",
     },
     {
-      src: "/images/bono-4-frases.webp",
+      src: "/assets/aistudio/bonus_4_3a13a7fa.png",
       alt: "Portada del Bono 4: 50 Frases para Captar Atención",
-      slotLabel: "Portada Bono 4 (bono-4-frases.webp)",
+      slotLabel: "Portada Bono 4 (bonus_4_3a13a7fa.png)",
     },
     {
-      src: "/images/bono-5-control.webp",
+      src: "/assets/aistudio/bonus_5_f63a8050.png",
       alt: "Portada del Bono 5: Control de Resultados",
-      slotLabel: "Portada Bono 5 (bono-5-control.webp)",
+      slotLabel: "Portada Bono 5 (bonus_5_f63a8050.png)",
     },
   ] satisfies ImageSlotConfig[],
   demos: {
