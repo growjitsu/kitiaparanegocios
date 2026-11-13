@@ -5,7 +5,7 @@ export const CURRENCY = "USD";
 export const PRICE_DISPLAY = "US$ 9";
 
 // Configura aquí tu enlace real de checkout de Kiwify cuando esté listo.
-export const KIWIFY_CHECKOUT_URL: string = "";
+export const KIWIFY_CHECKOUT_URL: string = "https://pay.kiwify.com/pvkPVCO";
 
 // Configura aquí tu correo de soporte y enlaces legales.
 export const SUPPORT_EMAIL: string = "";

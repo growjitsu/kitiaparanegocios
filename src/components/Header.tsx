@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { PRODUCT_NAME, PRICE_DISPLAY } from "../config/site";
+import { KIWIFY_CHECKOUT_URL, PRODUCT_NAME, PRICE_DISPLAY } from "../config/site";
+import { trackInitiateCheckout } from "../utils/pixel";
 
 const NAV_LINKS = [
   { href: "#contenido", label: "Contenido" },
@@ -15,6 +16,13 @@ export const Header: React.FC = () => {
   const handleNavClick = () => {
     setMobileMenuOpen(false);
   };
+
+  const handleCheckoutClick = () => {
+    trackInitiateCheckout();
+    setMobileMenuOpen(false);
+  };
+
+  const checkoutHref = KIWIFY_CHECKOUT_URL.trim() || "#oferta";
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#071226]/95 backdrop-blur-md">
@@ -43,7 +51,9 @@ export const Header: React.FC = () => {
         {/* Zona 3: Acción principal + botón menú móvil */}
         <div className="flex items-center gap-2 shrink-0">
           <a
-            href="#oferta"
+            href={checkoutHref}
+            onClick={handleCheckoutClick}
+            rel={KIWIFY_CHECKOUT_URL.trim() ? "noopener noreferrer" : undefined}
             className="hidden sm:inline-flex items-center justify-center min-h-[40px] rounded-lg bg-[#F5C542] px-4 py-2 text-sm font-bold text-[#071226] hover:bg-[#ffd257] transition-colors whitespace-nowrap shrink-0"
           >
             Obtener por {PRICE_DISPLAY}
@@ -88,8 +98,9 @@ export const Header: React.FC = () => {
           </ul>
           <div className="mt-3 pt-3 border-t border-white/10">
             <a
-              href="#oferta"
-              onClick={handleNavClick}
+              href={checkoutHref}
+              onClick={handleCheckoutClick}
+              rel={KIWIFY_CHECKOUT_URL.trim() ? "noopener noreferrer" : undefined}
               className="flex min-h-[48px] w-full items-center justify-center rounded-xl bg-[#F5C542] px-5 py-3 text-base font-bold text-[#071226] hover:bg-[#ffd257] transition-colors"
             >
               Quiero mi Kit por {PRICE_DISPLAY}
